@@ -178,8 +178,9 @@ object-fit: cover;
   border-radius: 25px;
   visibility: hidden;
 } */
-.intro-contact .right-side a {
-  /* margin-top: 65px; */
+/* .intro-contact .right-side a {
+  position: sticky;
+  z-index: 10000;
   align-self: center;
   border-radius: 15px;
   font-size: 56px;
@@ -188,7 +189,39 @@ object-fit: cover;
   color: white;
   text-decoration: none;
   padding: 5px 10px;
+} */
+.container-for-track {
+  display: flex;
 }
+#service-link-container{
+  /* padding-top: 800px; */
+  margin-top: 75vh;
+  position: sticky;
+  z-index: 10000;
+  top: 0px;
+}
+#everything-else {
+  width: 99.99vw;
+}
+#track-left-side {
+  width: .01vw;
+  height: inherit;
+}
+body #services-phone {
+  position: absolute;
+  transition: left 1s;
+  left: 55vw;
+  white-space: nowrap;
+  border-radius: 15px;
+  font-size: 56px;
+  border: 3px solid black;
+  background-color: hsl(221, 70%, 30%);
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+
 .intro-slogan h3 {
   font-size: 85px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -203,6 +236,13 @@ object-fit: cover;
 /* ---------- Services ---------- */
 .services {
   background-color: white;
+}
+#services > h2 {
+  position: relative;
+}
+#services-link {
+  position: absolute;
+  top: -72px;
 }
 
 .services h2 {
@@ -281,6 +321,13 @@ object-fit: cover;
   /* background-color: rgba(40, 113, 186, 0.646); */
   background-color: rgb(29, 55, 92);
 }
+.about-us > h2 {
+  position: relative;
+}
+#about-us-link {
+  position: absolute;
+  top: -75px;
+}
 .about-us h2 {
   text-align: center;
   font-size: 42px;
@@ -329,6 +376,11 @@ object-fit: cover;
     font-size: 42px;
     padding: 5px 10px;
     margin: 15px;
+    position: relative;
+}
+#testimonial-link {
+  position: absolute;
+  top: -75px;
 }
 #testimonials-container {
   width: 100%;
@@ -470,9 +522,38 @@ footer {
   align-content: center;
   flex-wrap: wrap;
 }
-.contact ul {
+/* .contact ul {
   display: flex;
+} */
+
+/* cur form - will be contact */
+#form-wrapper {
+  display: flex;
+  flex-direction: column;
 }
+
+#form-wrapper p {
+  padding: 10px;
+}
+#form-wrapper span {
+  font-weight: bolder;
+}
+#form-wrapper img {
+  width: 250px;
+  border-radius: 15px;
+  cursor: pointer;
+margin: 10px 5px;
+}
+
+#form-wrapper #social-media-icons img {
+  height: 35px;
+  width: 35px;
+}
+
+
+
+
+
 
 #contact-form {
   width: 85%;

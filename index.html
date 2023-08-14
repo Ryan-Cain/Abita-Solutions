@@ -13,9 +13,9 @@
       media="screen and (max-width: 480px)"
     />
     <link
-    rel="stylesheet"
-    href="styles/styles.css"
-    media="screen and (min-width: 481px)"
+      rel="stylesheet"
+      href="styles/styles.css"
+      media="screen and (min-width: 481px)"
     />
     <link
       rel="stylesheet"
@@ -29,350 +29,396 @@
     ></script>
   </head>
   <body id="home" onscroll="closeNavbar()">
-    <header>
-      
-      <div class="header-left">
-        <div class="logo">
-          <a href="#home"
-            ><img
-              class="img-logo"
-              src="img/Logo 11-17-22 - Copy.png"
-              alt="abita-solutions-logo"
-          /></a>
+    <div class="container-for-track">
+      <div id="track-left-side">
+        <div id="service-link-container">
+          <a href="tel:+19852420022" id="services-phone">(985) 242-0022</a>
         </div>
-        <!-- <i class="fa-solid fa-bars navbar-toggle-btn" ></i> -->
-        <div class="toggle-btn-container navbar-toggle-btn">
-            <div class="mobile-header-toggle" id="nav-toggle">
-              <div class="top-left button-bar"></div>
-              <div class="top-right button-bar"></div>
-              <div class="middle-left button-bar"></div>
-              <div class="middle-right button-bar"></div>
-              <div class="middle-left2 button-bar"></div>
-              <div class="middle-right2 button-bar"></div>
-              <div class="bottom-left button-bar"></div>
-              <div class="bottom-right button-bar"></div>
+      </div>
+      <div id="everything-else">
+        <!-- ---------- Navbar------------ -->
+        <header>
+          <div class="header-left">
+            <div class="logo">
+              <a href="#home"
+                ><img
+                  class="img-logo"
+                  src="img/AS-Logo.png"
+                  alt="abita-solutions-logo"
+              /></a>
             </div>
-        </div>
-      </div>
-      <div class="nav-hide">
-        <nav id="tab-links">
-          <ul>
-            <li><a href="#home" class="navbar-toggle-btn">Home</a></li>
-            <li>
-              <a href="#services-link" class="navbar-toggle-btn">Services</a>
-            </li>
-            <li>
-              <a href="#about-us-link" class="navbar-toggle-btn">About Us</a>
-            </li>
-            <li>
-              <a href="#testimonial-link" class="navbar-toggle-btn"
-                >Testimonials</a
-              >
-            </li>
-            <li><a href="#contact-link" class="navbar-toggle-btn">Contact</a></li>
-            <li class="flag-pic">
-              <img
-                src="img/1200px-Flag_of_the_United_States.svg.webp"
-                alt="American flag pic"
-              />
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- <nav id="tab-links">
-        <ul>
-          <li><a href="#home" class="navbar-toggle-btn">Home</a></li>
-          <li>
-            <a href="#services-link" class="navbar-toggle-btn">Services</a>
-          </li>
-          <li>
-            <a href="#about-us-link" class="navbar-toggle-btn">About Us</a>
-          </li>
-          <li>
-            <a href="#testimonial-link" class="navbar-toggle-btn"
-              >Testimonials</a
-            >
-          </li>
-          <li><a href="#contact-link" class="navbar-toggle-btn">Contact</a></li>
-          <li class="flag-pic">
-            <img
-              src="img/1200px-Flag_of_the_United_States.svg.webp"
-              alt="American flag pic"
-            />
-          </li>
-        </ul>
-      </nav> -->
-      
-    </header>
-    <div class="main-overlay">
-      <div class="color-overlay"></div>
-      <!-- <div class="background-pic"></div> -->
-      <video
-        class="background-clip mobile-hide"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        <source src="./img/abita.mp4" type="video/mp4" />
-      </video>
-      <video
-        class="background-clip fullscreen-hide"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        <source src="./img/abita-portrait.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="main-splash-screen">
-      <div class="intro-contact">
-        <div class="intro-slogan">
-          <h3>Abita Solutions</h3>
-          <p class="mobile-hide landscape-hide">We provide all of your commercial</p>
-          <p class="mobile-hide landscape-hide">plumbing services.</p>
-          <p class="fullscreen-hide landscape-show">
-            We provide all of your commercial plumbing services.
-          </p>
+            <div class="toggle-btn-container navbar-toggle-btn">
+              <div class="mobile-header-toggle" id="nav-toggle">
+                <div class="top-left button-bar"></div>
+                <div class="top-right button-bar"></div>
+                <div class="middle-left button-bar"></div>
+                <div class="middle-right button-bar"></div>
+                <div class="middle-left2 button-bar"></div>
+                <div class="middle-right2 button-bar"></div>
+                <div class="bottom-left button-bar"></div>
+                <div class="bottom-right button-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-hide">
+            <nav id="tab-links">
+              <ul>
+                <li><a href="#home" class="navbar-toggle-btn">Home</a></li>
+                <li>
+                  <a href="#services-link" class="navbar-toggle-btn"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#about-us-link" class="navbar-toggle-btn"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#testimonial-link" class="navbar-toggle-btn"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact-link" class="navbar-toggle-btn">Contact</a>
+                </li>
+                <li class="flag-pic">
+                  <img
+                    src="img/1200px-Flag_of_the_United_States.svg.webp"
+                    alt="American flag pic"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <!-- ----------Main Splashscreen---------- -->
+        <div class="main-overlay">
+          <div class="color-overlay"></div>
+
+          <video
+            class="background-clip mobile-hide"
+            onloadstart="this.playbackRate = .5"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./img/real-pics/mainscreen-vid.MOV" type="video/mp4" />
+          </video>
+          <video
+            class="background-clip fullscreen-hide"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="./img/real-pics/mainscreen-vid.MOV" type="video/mp4" />
+          </video>
         </div>
 
-        <div class="right-side">
+        <div class="main-splash-screen">
+          <div class="intro-contact">
+            <div class="intro-slogan">
+              <h3>Abita Solutions</h3>
+              <p class="mobile-hide landscape-hide">
+                We provide services to exceed
+              </p>
+              <p class="mobile-hide landscape-hide">
+                all of your commercial plumbing needs.
+              </p>
+              <p class="fullscreen-hide landscape-show">
+                We provide services to exceed all of your commercial plumbing
+                needs.
+              </p>
+            </div>
+
+            <div class="right-side">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------Services---------- -->
+        <main>
+          <section class="services" id="services">
+            <h2>
+              Services
+              <div id="services-link"></div>
+            </h2>
+            <div class="service-tiles">
+              <div class="tile">
+                <div class="img-or-desc">
+                  <img
+                    src="./img/real-pics/sewer-backup-380x300.jpg.png"
+                    alt="sewer backup"
+                  />
+                  <div class="overlay">
+                    <p>
+                      We can diagnose where the backup originated and properly
+                      clear the system.
+                    </p>
+                  </div>
+                </div>
+                <h3>Sewer Backups</h3>
+              </div>
+              <div class="tile">
+                <div class="img-or-desc">
+                  <img
+                    src="./img/real-pics/camera-inspection-380x300.JPG.png"
+                    alt="sewer camera"
+                  />
+                  <div class="overlay">
+                    <p>
+                      We can inspect and record video footage to determine
+                      backup and show proof once it's cleared.
+                    </p>
+                  </div>
+                </div>
+                <h3>Camera Inspection</h3>
+              </div>
+              <div class="tile">
+                <div class="img-or-desc">
+                  <img
+                    src="./img/real-pics/backflow-testing-380x300.jpg.png"
+                    alt="sewer backup"
+                  />
+                  <div class="overlay">
+                    <p>
+                      We are licensed to inspect and install backflow preventers
+                      in the state of Louisiana.
+                    </p>
+                  </div>
+                </div>
+                <h3>Backflow Testing</h3>
+              </div>
+              <div class="tile">
+                <div class="img-or-desc">
+                  <img
+                    src="./img/real-pics/general-plumbing-380x300.JPG.png"
+                    alt="sewer backup"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Our services include new installations, maintenance, and
+                      repairs of all plumbing systems.
+                    </p>
+                  </div>
+                </div>
+                <h3>General Plumbing</h3>
+              </div>
+            </div>
+          </section>
+
+          <!-- ----------About Us---------- -->
+          <section class="about-us" id="about-us">
+            <h2>About Us
+              <div id="about-us-link"></div>
+            </h2>
+            <div class="pic-and-bio">
+              <img class="desktop-pic" src="./img/ThePlumbers.jpg" alt="" />
+              <div class="about-bio">
+                <img
+                  class="mobile-landscape-pic"
+                  src="./img/ThePlumbers.jpg"
+                  alt=""
+                />
+                <h4>We are focused on solutions</h4>
+                <p>
+                  We are a locally owned and operated business, proudly
+                  providing solutions for your day to day commercial plumbing
+                  needs. We strive for excellence while building lasting
+                  relationships. If professional service in a timely manner
+                  backed with integrity is what you're looking for, Abita
+                  Solutions is your company of choice.
+                </p>
+                <p>
+                  This is the second test paragraph out of two paragraphs. That
+                  is probably pretty obvious but that is ok because I am just
+                  trying to fill up space. Almost done, I think one or two more
+                  sentences should be fine to demonstrate what this will look
+                  like. Perhaps just one final sentence will do, yeah I think
+                  that is enough random words.
+                </p>
+              </div>
+            </div>
+          </section>
           <div></div>
-          <!-- <img src="./img/Plumbing-Crew-2.jpg" alt="" /> -->
-          <a href="tel:+15045412407" id="services-link">504-841-2407</a>
-        </div>
+
+          <!-- ----------Testimonials---------- -->
+          <section class="testimonials" id="testimonials-container">
+            <h2 id="testimonial-header">Testimonials
+              <div id="testimonial-link"></div>
+            </h2>
+            <div id="testimonial" class="mySwiper">
+              <div id="testimonial-content" class="swiper-wrapper">
+                <div class="slide swiper-slide">
+                  <p>
+                    Abita solutions were very helpful and solved the problem
+                    quickly and proffesionally, will definitly call again next
+                    time!
+                  </p>
+                  <div class="details">
+                    <span class="name">Donald Trump</span>
+                    <span class="job-title">USA, President</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <p>
+                    Abita solutions got to the site quickly and fixed the clog!!
+                  </p>
+                  <div class="details">
+                    <span class="name">Tony Stark</span>
+                    <span class="job-title">Avengers HQ, Team Lead</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <p>
+                    I have never seen anyone wrestle the annaconda like that guy
+                    Ryan did, he is a Legend!!
+                  </p>
+                  <div class="details">
+                    <span class="name">No one</span>
+                    <span class="job-title">No where, Ever</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <p>
+                    Wow!! Wow! Wow!! Just stop thinking about it and call Abita
+                    Solutions now!
+                  </p>
+                  <div class="details">
+                    <span class="name">Lee Lukinovich</span>
+                    <span class="job-title">Abita Solutions, El Jefe</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- ----------Customer Name Scroller---------- -->
+            <span>
+              <h3>Some of our client service locations include</h3>
+            </span>
+            <div id="customer-scroll-wrapper">
+              <div id="customer-scroll-name">
+                <p>
+                  <span>Sam's Club</span><span>Walgreens</span
+                  ><span>TJ Maxx</span><span>Amazon</span
+                  ><span>Dollar General</span><span>Tractor Supply</span
+                  ><span>PJ's Coffee</span><span>Dollar Tree</span
+                  ><span>Family Dollar</span><span>Ulta Beauty</span
+                  ><span>Chipotle</span><span>Coach</span>
+                </p>
+                <p>
+                  <span>Sam's Club</span><span>Walgreens</span
+                  ><span>TJ Maxx</span><span>Amazon</span
+                  ><span>Dollar General</span><span>Tractor Supply</span
+                  ><span>PJ's Coffee</span><span>Dollar Tree</span
+                  ><span>Family Dollar</span><span>Ulta Beauty</span
+                  ><span>Chipotle</span><span>Coach</span>
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- ----------Certifications---------- -->
+        <footer>
+          <section class="contact" id="contact">
+            <div class="contact-tile" id="contact-info">
+              <h3>Certifications</h3>
+              <p><span>License #:</span> LMP6635</p>
+              <p id="bfp-cert">(BFP Certified)</p>
+              <!-- <img id="bbb-tile" src="./img/BBB tile.png" alt="" /> -->
+              <img src="./img/real-pics/bfp-certificate.jpg" alt="" />
+              <img src="./img/real-pics/SPBLA-logo.png" alt="" />
+            </div>
+
+            <!-- ----------Contact / Form---------- -->
+            <div class="contact-tile" id="form-wrapper">
+              <h3>Contact Us</h3>
+
+              <p>
+                <span>Email:</span>
+                <a href="mailto:abitasolutions@gmail.com"
+                  >abitasolutions@gmail.com</a
+                >
+              </p>
+              <p>
+                <span>Phone:</span>
+                <a href="tel:+19852420022">(985) 242-0022</a>
+              </p>
+              <div id="social-media-icons">
+                <a href=""><img src="./img/youtube logo.png" alt="youtube logo" /></a>
+                <a href=""><img src="./img/tik-tok-logo.png" alt="tick tock logo" /></a>
+                <a href="mailto:abitasolutions@gmail.com"
+                  ><img src="./img/email logo.png" alt="email link"
+                /></a>
+              </div>
+              <form id="contact-form">
+                <div>
+                  <!-- <label for="name">Name</label> -->
+                  <input type="text" id="name" name="name" placeholder="Name" />
+                </div>
+                <div>
+                  <!-- <label for="email">Email</label> -->
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div>
+                  <!-- <label for="number">Number</label> -->
+                  <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div>
+                  <!-- <label for="message">Message</label> -->
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="What can we do for you?"
+                  ></textarea>
+                </div>
+
+                <button id="submit-btn" type="submit" value="Submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <!-- ----------Service Areas---------- -->
+            <div class="contact-tile" id="service-locations">
+              <h3>Service Areas</h3>
+              <p>
+                We proudly service the Northshore and Southshore of Southeast
+                Louisiana.
+              </p>
+              <img
+                src="./img/real-pics/service-area-map.jpeg"
+                alt="service-area-map"
+              />
+              <div class="overlay">
+                <div id="contact-link"></div>
+              </div>
+            </div>
+          </section>
+        </footer>
       </div>
     </div>
-    <main>
-      <section class="services" id="services">
-        <!-- <div class="bar-divider"></div> -->
-
-        <h2>Services</h2>
-        <div class="service-tiles">
-          <div class="tile">
-            <div class="img-or-desc">
-              <img src="./img/sewer-backup2.png" alt="sewer backup" />
-              <div class="overlay">
-                <p>
-                  We can diagnose why the backup happened, and then clear the
-                  system so that the backup is removed.
-                </p>
-              </div>
-            </div>
-            <h3>Sewer Backups</h3>
-          </div>
-          <div class="tile">
-            <div class="img-or-desc">
-              <img
-                src="./img/sewer-camera-inspection2.jpg"
-                alt="sewer camera"
-              />
-              <div class="overlay">
-                <p>
-                  We can video what is going on inside the line to find the
-                  problem, and to show proof that it is fixed!
-                </p>
-              </div>
-            </div>
-            <h3>Sewer Camera</h3>
-          </div>
-          <div class="tile">
-            <div class="img-or-desc">
-              <img src="./img/bfp-inspection2.png" alt="sewer backup" />
-              <div class="overlay">
-                <p>
-                  We are licensed to inspect and install backflow preventers in
-                  the state of Louisiana.
-                </p>
-              </div>
-            </div>
-            <h3>Backflow Inspection</h3>
-          </div>
-          <div class="tile">
-            <div class="img-or-desc">
-              <img src="./img/general-plumbing2.jpg" alt="sewer backup" />
-              <div class="overlay">
-                <p>
-                  We can handle general plumbing system and equipment installs,
-                  as well as repairs.
-                </p>
-              </div>
-            </div>
-            <h3 id="about-us-link">General Plumbing</h3>
-          </div>
-        </div>
-      </section>
-      <section class="about-us" id="about-us">
-        <!-- <div class="bar-divider"></div> -->
-
-        <h2>About Us</h2>
-        <div class="pic-and-bio">
-          <img class="desktop-pic" src="./img/ThePlumbers.jpg" alt="" />
-          <div class="about-bio">
-            <img class="mobile-landscape-pic" src="./img/ThePlumbers.jpg" alt="" />
-            <h4>We are focused on solutions</h4>
-            <p>
-              This is a test paragraph that I am filling out just to see what it
-              will look like. But it will probably say something about how Abita
-              Solutions is a local company that is awesome! Pretty much anything
-              you need done we can do, no joke! Unless it is something we cant
-              do.
-            </p>
-            <p>
-              This is the second test paragraph out of two paragraphs. That is
-              probably pretty obvious but that is ok because I am just trying to
-              fill up space. Almost done, I think one or two more sentences
-              should be fine to demonstrate what this will look like. Perhaps
-              just one final sentence will do, yeah I think that is
-              <span id="testimonial-link"></span>enough random words.
-            </p>
-            <!-- <div id="testimonial-link"></div> -->
-          </div>
-        </div>
-      </section>
-      <div></div>
-      <section class="testimonials" id="testimonials-container">
-        <!-- <div class="bar-divider"></div> -->
-
-        <h2 id="testimonial-header">Testimonials</h2>
-        <div id="testimonial" class="mySwiper">
-          <div id="testimonial-content" class="swiper-wrapper">
-            <div class="slide swiper-slide">
-              <p>
-                Abita solutions were very helpful and solved the problem quickly
-                and proffesionally, will definitly call again next time!
-              </p>
-              <div class="details">
-                <span class="name">Donald Trump</span>
-                <span class="job-title">USA, President</span>
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <p>
-                Abita solutions got to the site quickly and fixed the clog!!
-              </p>
-              <div class="details">
-                <span class="name">Tony Stark</span>
-                <span class="job-title">Avengers HQ, Team Lead</span>
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <p>
-                I have never seen anyone wrestle the annaconda like that guy
-                Ryan did, he is a Legend!!
-              </p>
-              <div class="details">
-                <span class="name">No one</span>
-                <span class="job-title">No where, Ever</span>
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <p>
-                Wow!! Wow! Wow!! Just stop thinking about it and call Abita
-                Solutions now!
-              </p>
-              <div class="details">
-                <span class="name">Lee Lukinovich</span>
-                <span class="job-title">Abita Solutions, El Jefe</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <span>
-          <h3>Some of our client service locations include</h3>
-        </span>
-        <div id="customer-scroll-wrapper">
-          <div id="customer-scroll-name">
-            <p>
-              <span>Sam's Club</span><span>Walgreens</span><span>TJ Maxx</span
-              ><span>Amazon</span><span>Dollar General</span
-              ><span>Tractor Supply</span><span>PJ's Coffee</span
-              ><span>Dollar Tree</span><span>Family Dollar</span
-              ><span>Ulta Beauty</span><span>Chipotle</span><span>Coach</span>
-            </p>
-            <p>
-              <span>Sam's Club</span><span>Walgreens</span><span>TJ Maxx</span
-              ><span>Amazon</span><span>Dollar General</span
-              ><span>Tractor Supply</span><span>PJ's Coffee</span
-              ><span>Dollar Tree</span><span>Family Dollar</span
-              ><span>Ulta Beauty</span><span>Chipotle</span><span>Coach</span>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- <div class="bar-divider"></div> -->
-
-    <footer>
-      <section class="contact" id="contact">
-        <div class="contact-tile" id="contact-info">
-          <h3>Contact Info</h3>
-          <p><span>Email:</span> abitasolutions@gmail.com</p>
-          <p>
-            <span>Phone:</span> <a href="tel:+15045412407">(504)-541-2407</a>
-          </p>
-          <div id="social-media-icons">
-            <img src="./img/facebook-logo.png" alt="" />
-            <img src="./img/youtube logo.png" alt="" />
-            <img src="./img/instagram logo.png" alt="" />
-            <img src="./img/email logo.png" alt="" />
-          </div>
-          <img id="bbb-tile" src="./img/BBB tile.png" alt="" />
-          <p><span>License #:</span> LMP6635</p>
-          <p id="bfp-cert">(BFP Certified)</p>
-        </div>
-        <div class="contact-tile" id="form-wrapper">
-          <h3>Drop Us a Line!</h3>
-          <form id="contact-form">
-            <div>
-              <!-- <label for="name">Name</label> -->
-              <input type="text" id="name" name="name" placeholder="Name" />
-            </div>
-            <div>
-              <!-- <label for="email">Email</label> -->
-              <input type="text" id="email" name="email" placeholder="Email" />
-            </div>
-            <div>
-              <!-- <label for="number">Number</label> -->
-              <input
-                type="text"
-                id="number"
-                name="number"
-                placeholder="Phone Number"
-              />
-            </div>
-            <div>
-              <!-- <label for="message">Message</label> -->
-              <textarea
-                id="message"
-                name="message"
-                placeholder="What can we do for you?"
-              ></textarea>
-            </div>
-
-            <button id="submit-btn" type="submit" value="Submit">Submit</button>
-          </form>
-        </div>
-        <div class="contact-tile" id="service-locations">
-          <h3>Service Areas</h3>
-          <p>
-            We service from Hammond to Franklinton to the Slidell area, and
-            everything in-between!
-          </p>
-          <img src="./img/map.png" alt="sevice-area-map" />
-          <div class="overlay">
-            <div id="contact-link"></div>
-          </div>
-        </div>
-      </section>
-    </footer>
     <script src="./js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- ----------Script for testimonial swiper---------- -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         autoplay: {
