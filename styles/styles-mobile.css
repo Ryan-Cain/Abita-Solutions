@@ -589,16 +589,16 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 108px;
   margin-bottom: 15px;
   margin-top: 15px;
   color: white;
-  /* font-size: 36px; */
 }
 #customer-scroll-name {
   position: absolute;
-  display: block;
-  width: 5800px;
+  /* display: block; */
+  /* height: fit-content; */
+  width: 6500px;
   animation: RightToLeft 60s infinite linear;
   display: flex;
 }
@@ -607,8 +607,12 @@ body {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  font-size: 36px;
-  height: 100%;
+  align-items: center;
+  /* font-size: 36px; */
+  /* height: 100%; */
+}
+#customer-scroll-name img {
+  height: 100px;
 }
 
 @keyframes RightToLeft {

@@ -94,6 +94,7 @@ body {
   background-color: rgb(50, 119, 188);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
 }
 .bar-divider {
   width: 95%;
@@ -117,7 +118,7 @@ body {
   position: absolute;
   z-index: -10;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .main-overlay .background-pic {
   background: url("../img/atrium5.jpg") no-repeat center center/cover;
@@ -193,13 +194,27 @@ object-fit: cover;
 .container-for-track {
   display: flex;
 }
+
 #service-link-container{
   /* padding-top: 800px; */
-  margin-top: 75vh;
+  /* padding-top: 75vh; */
   position: sticky;
   z-index: 10000;
-  top: 0px;
+  top: 168px;
 }
+#service-link-container a {
+  position: absolute;
+  bottom: 100px;
+};
+#observer-container {
+  position: relative;
+}
+#observer {
+  position: absolute;
+  bottom: 250px;
+}
+
+
 #everything-else {
   width: 99.99vw;
 }
@@ -290,7 +305,7 @@ body #services-phone {
   overflow: hidden;
   border-radius: 5px;
   height: 0;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   line-height: 100%;
   /* display: flex; */
   /* justify-content: center;
@@ -348,9 +363,10 @@ body #services-phone {
 
 .pic-and-bio {
   display: flex;
+  justify-content: center;
 }
 .pic-and-bio img {
-  width: 50%;
+  width: 30%;
   margin: 65px;
   border-radius: 15px;
 }
@@ -391,6 +407,11 @@ body #services-phone {
   /* align-content: center; */
   background-color: rgb(57, 110, 164);
 }
+#testimonials-container > span {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
 #testimonial {
   position: relative;
   align-self: center;
@@ -457,19 +478,20 @@ body #services-phone {
 .testimonials > span {
   align-self: center;
 }
+
 #customer-scroll-wrapper {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 108px;
   margin-bottom: 15px;
   margin-top: 15px;
   color: white;
-  /* font-size: 36px; */
 }
 #customer-scroll-name {
   position: absolute;
-  display: block;
+  /* display: block; */
+  /* height: fit-content; */
   width: 6500px;
   animation: RightToLeft 60s infinite linear;
   display: flex;
@@ -479,9 +501,15 @@ body #services-phone {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  font-size: 36px;
-  height: 100%;
+  align-items: center;
+  /* font-size: 36px; */
+  /* height: 100%; */
 }
+#customer-scroll-name img {
+  height: 100px;
+}
+
+
 
 @keyframes RightToLeft {
   0% {
