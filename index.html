@@ -13,7 +13,11 @@
   <script src="https://kit.fontawesome.com/8074480181.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="home" onscroll="closeNavbar()">
+<body id="home">
+
+
+  <!-- Image Modal -->
+  <div id="insert-box"></div>
 
 
 
@@ -38,6 +42,7 @@
       </div>
     </div>
     <div class="nav-hide">
+      
       <nav id="tab-links">
         <ul>
           <li><a href="#home" class="navbar-toggle-btn">Home</a></li>
@@ -68,11 +73,11 @@
     <video class="background-clip mobile-hide" onloadstart="this.playbackRate = .5" autoplay loop muted playsinline>
       <source src="./img/real-pics/mainscreen-vid.MOV" type="video/mp4" />
     </video>
-    <video class="background-clip fullscreen-hide" autoplay loop muted playsinline>
+    <video class="background-clip fullscreen-hide" onloadstart="this.playbackRate = .5" autoplay loop muted playsinline>
       <source src="./img/real-pics/mainscreen-vid.MOV" type="video/mp4" />
     </video>
   </div>
-
+  
   <div class="main-splash-screen">
     <div class="intro-contact">
       <div class="intro-slogan">
@@ -88,7 +93,7 @@
           needs.
         </p>
       </div>
-
+      
       <div class="right-side">
         <div></div>
       </div>
@@ -97,11 +102,10 @@
 
   <!-- phone number -->
   <div id="service-link-container">
-    <div id="observer-container">
-      <div id="observer"></div>
-    </div>
+    
     <a href="tel:+19852420022" id="services-phone">(985) 242-0022</a>
   </div>
+  <div id="white-back-phone"></div>
 
   <!-- ----------Services---------- -->
   <main>
@@ -248,8 +252,8 @@
           
           <p>
             <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
-            <span><img src="./img/logos/walgreens2.png" alt=""></span>
-            <span><img src="./img/logos/tj maxx2.png" alt=""></span>
+            <span><img src="./img/logos/walgreens.png" alt=""></span>
+            <span><img src="./img/logos/tj maxx.png" alt=""></span>
             <span><img src="./img/logos/amazon.png" alt=""></span>
             <span><img src="./img/logos/dollar general.png" alt=""></span>
             <span><img src="./img/logos/tractor supply.png" alt=""></span>
@@ -262,8 +266,8 @@
           </p>
           <p>
             <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
-            <span><img src="./img/logos/walgreens2.png" alt=""></span>
-            <span><img src="./img/logos/tj maxx2.png" alt=""></span>
+            <span><img src="./img/logos/walgreens.png" alt=""></span>
+            <span><img src="./img/logos/tj maxx.png" alt=""></span>
             <span><img src="./img/logos/amazon.png" alt=""></span>
             <span><img src="./img/logos/dollar general.png" alt=""></span>
             <span><img src="./img/logos/tractor supply.png" alt=""></span>
@@ -285,19 +289,21 @@
 
   <!-- ----------Certifications---------- -->
   <footer>
-    <section class="contact" id="contact">
-      <div class="contact-tile" id="contact-info">
+    <section class="contact-cert-info">
+      <div class="footer-tile" id="cert-info">
         <h3>Certifications</h3>
-        <p><span>License #:</span> LMP6635</p>
+        <p><span>License #</span> 6635</p>
         <p id="bfp-cert">(BFP Certified)</p>
-        <!-- <img id="bbb-tile" src="./img/BBB tile.png" alt="" /> -->
-        <img src="./img/real-pics/bfp-certificate.jpg" alt="" />
-        <img src="./img/real-pics/SPBLA-logo.png" alt="" />
+        <a href="https://www.bbb.org/us/la/abita-springs/profile/commercial-plumber/abita-solutions-llc-0985-90041261/#sealclick" target="_blank" rel="nofollow"><img id="bbb-tile" src="./img/BBB.png" alt="Abita Solutions LLC BBB Business Review" /></a>
+        <img id="spbla-pic" src="./img/real-pics/SPBLA-logo.png" alt="" class="no-pointer" />
+        <img onclick="openPicModal()" src="./img/real-pics/bfp-certificate.jpg" alt="" />
       </div>
-
+      
       <!-- ----------Contact / Form---------- -->
-      <div class="contact-tile" id="form-wrapper">
-        <h3>Contact Us</h3>
+      <div class="footer-tile" id="form-wrapper">
+        <h3>Contact Us
+          <div id="contact-link"></div>
+        </h3>
 
         <p>
           <span>Email:</span>
@@ -312,32 +318,35 @@
           <a href=""><img src="./img/tik-tok-logo.png" alt="tick tock logo" /></a>
           <a href="mailto:abitasolutions@gmail.com"><img src="./img/email logo.png" alt="email link" /></a>
         </div>
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/mw3111111@hotmail.com" method="POST" name="_template" value="table">
+          <p>Or send us a message here, although if the request is urgent please give us a call!</p>
           <div>
             <!-- <label for="name">Name</label> -->
             <input type="text" id="name" name="name" placeholder="Name" />
+          </div>
+          <div>
+            <!-- <label for="number">Number</label> -->
+            <input oninput="phoneNumber(this)" type="tel" id="phone" name="phone" placeholder="Phone Number" />
           </div>
           <div>
             <!-- <label for="email">Email</label> -->
             <input type="text" id="email" name="email" placeholder="Email" />
           </div>
           <div>
-            <!-- <label for="number">Number</label> -->
-            <input type="text" id="number" name="number" placeholder="Phone Number" />
-          </div>
-          <div>
             <!-- <label for="message">Message</label> -->
-            <textarea id="message" name="message" placeholder="What can we do for you?"></textarea>
+            <textarea id="message" name="message" placeholder="How can we provide you with excellent service?"></textarea>
           </div>
 
           <button id="submit-btn" type="submit" value="Submit">
             Submit
           </button>
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="#home">
         </form>
       </div>
 
       <!-- ----------Service Areas---------- -->
-      <div class="contact-tile" id="service-locations">
+      <div class="footer-tile" id="service-locations">
         <h3>Service Areas</h3>
         <p>
           We proudly service the Northshore and Southshore of Southeast
@@ -345,13 +354,22 @@
         </p>
         <img src="./img/real-pics/service-area-map.jpeg" alt="service-area-map" />
         <div class="overlay">
-          <div id="contact-link"></div>
+          <!-- <div id="contact-link"></div> -->
         </div>
       </div>
     </section>
   </footer>
 
-  </div>
+
+  
+  
+</div>
+
+
+
+
+
+
   <script src="./js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
   <!-- ----------Script for testimonial swiper---------- -->
