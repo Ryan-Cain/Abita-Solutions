@@ -292,11 +292,15 @@ body {
   width: 100vw;
   opacity: .8;
 }
+.color-overlay.active {
+  background-color: rgba(30, 89, 160);
+  opacity: 1;
+}
 .intro-contact {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 45%;
+  margin-top: 40%;
   height: 100vh;
 }
 .intro-slogan {
@@ -616,7 +620,7 @@ body #services-phone.active {
     left: 0;
   }
   100% {
-    left: -2900px;
+    left: -3250px;
   }
 }
 

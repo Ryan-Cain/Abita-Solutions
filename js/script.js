@@ -18,13 +18,15 @@ function closeNavbar() {
 
 const phoneNum = document.getElementById("services-phone");
 const phoneBackground = document.getElementById("white-back-phone");
+const colorOverlay = document.querySelector(".color-overlay");
+const serviceLinkContainer 
 
 window.onscroll = function () {
   checkScrollPosition();
   closeNavbar();
   // console.log(window.scrollY);
-  console.log(window.innerHeight * 0.15);
-  console.log(window.innerHeight - window.scrollY);
+  // console.log(window.innerHeight * 0.15);
+  // console.log(window.innerHeight - window.scrollY);
   if (window.innerHeight * 0.28 > window.innerHeight - window.scrollY) {
     phoneBackground.classList.add("active");
     phoneNum.classList.add("active");
@@ -34,22 +36,36 @@ window.onscroll = function () {
     phoneNum.classList.remove("active");
     // phoneNum.style.backgroundColor = "white";
   }
+  console.log(window.scrollY, document.body.scrollHeight / 2);
+  if (window.scrollY > document.body.scrollHeight / 2) {
+    colorOverlay.classList.add("active");
+  } else {
+    colorOverlay.classList.remove("active");
+  }
 };
 function checkScrollPosition() {
   if (screen.width < 500) {
     return;
   } else {
-    // console.log(window.scrollY);
     if (window.scrollY <= 500) {
       phoneNum.style.left = "55vw";
+      // phoneNum.classList.add("active1");
     } else if (window.scrollY >= 501 && window.scrollY <= 625) {
+      // phoneNum.classList.remove("active3");
+      // phoneNum.classList.add("active2");
       phoneNum.style.left = "25vw";
       phoneNum.style.fontSize = "56px";
       phoneNum.style.marginTop = "0px";
     } else if (window.scrollY >= 625) {
+      // phoneNum.classList.remove("active2");
+      // phoneNum.classList.add("active3");
       phoneNum.style.left = "25vw";
       phoneNum.style.fontSize = "36px";
       phoneNum.style.marginTop = "8px";
+      if (window.screen.width < 1400) {
+        phoneNum.style.fontSize = "30px";
+        phoneNum.style.marginTop = "0px";
+      }
     }
   }
 }
@@ -57,27 +73,6 @@ function checkScrollPosition() {
 // intersection observer
 
 const observerElements = document.querySelectorAll("#about-us");
-
-// const options = {
-//   root: root,
-//   rootMargin: "0px",
-//   threshold: 0,
-// };
-
-const checkPosition = (element) => {
-  const io = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        console.log("logging");
-        console.log(entry);
-      }
-    });
-  });
-  io.observe(element);
-};
-
-// let observer = new IntersectionObserver(callback, options);
-observerElements.forEach(checkPosition);
 
 // Open pic modal
 function openPicModal() {
@@ -119,11 +114,11 @@ function closePicModal() {
 //   elem.target.value = number + "l";
 // }
 
-// screen.orientation
-//   .lock("portrait")
-//   .then(() => {
-//     log.textContent = `Locked to ${oppositeOrientation}\n`;
-//   })
-//   .catch((error) => {
-//     log.textContent += `${error}\n`;
-//   });
+window.screen.orientation
+  .lock("portrait")
+  .then(() => {
+    console.log("good");
+  })
+  .catch((error) => {
+    console.log(error);
+  });

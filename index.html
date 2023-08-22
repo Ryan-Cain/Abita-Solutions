@@ -5,13 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 480px)" />
-  <link rel="stylesheet" href="styles/styles.css" media="screen and (min-width: 481px)" />
-  <link rel="stylesheet" href="styles/styles-mobile-landscape.css"
-    media="screen and (max-width: 1000px) and (orientation: landscape)" />
+  <!-- <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 480px)" /> -->
+  <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 600px)" />
+  <link rel="stylesheet" href="styles/styles-tablet.css"
+  media="screen and (min-width: 601px) and (max-width: 991px)" />
+  <link rel="stylesheet" href="styles/styles.css" media="screen and (min-width: 992px)" />
   <title>Abita Solutions</title>
   <script src="https://kit.fontawesome.com/8074480181.js" crossorigin="anonymous"></script>
 </head>
+
+<!-- , screen and (max-width: 1000px) and (orientation: landscape) -->
 
 <body id="home">
 
@@ -67,14 +70,15 @@
   </header>
 
   <!-- ----------Main Splashscreen---------- -->
+
   <div class="main-overlay">
     <div class="color-overlay"></div>
 
     <video class="background-clip mobile-hide" onloadstart="this.playbackRate = .5" autoplay loop muted playsinline>
-      <source src="./img/real-pics/mainscreen-vid.MOV" type="video/mp4" />
+      <source src="./img/real-pics/mainscreen-vid.mp4" type="video/mp4" />
     </video>
     <video class="background-clip fullscreen-hide" onloadstart="this.playbackRate = .5" autoplay loop muted playsinline>
-      <source src="./img/real-pics/mainscreen-vid.MOV" type="video/mp4" />
+      <source src="./img/real-pics/mainscreen-vid.mp4" type="video/mp4" />
     </video>
   </div>
   
@@ -253,8 +257,8 @@
           <p>
             <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
             <span><img src="./img/logos/walgreens.png" alt=""></span>
-            <span><img src="./img/logos/tj maxx.png" alt=""></span>
             <span><img src="./img/logos/amazon.png" alt=""></span>
+            <span><img src="./img/logos/tj maxx.png" alt=""></span>
             <span><img src="./img/logos/dollar general.png" alt=""></span>
             <span><img src="./img/logos/tractor supply.png" alt=""></span>
             <span><img src="./img/logos/pjs coffee.png" alt=""></span>
@@ -267,8 +271,8 @@
           <p>
             <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
             <span><img src="./img/logos/walgreens.png" alt=""></span>
-            <span><img src="./img/logos/tj maxx.png" alt=""></span>
             <span><img src="./img/logos/amazon.png" alt=""></span>
+            <span><img src="./img/logos/tj maxx.png" alt=""></span>
             <span><img src="./img/logos/dollar general.png" alt=""></span>
             <span><img src="./img/logos/tractor supply.png" alt=""></span>
             <span><img src="./img/logos/pjs coffee.png" alt=""></span>
@@ -314,8 +318,8 @@
           <a href="tel:+19852420022">(985) 242-0022</a>
         </p>
         <div id="social-media-icons">
-          <a href=""><img src="./img/youtube logo.png" alt="youtube logo" /></a>
-          <a href=""><img src="./img/tik-tok-logo.png" alt="tick tock logo" /></a>
+          <a href="https://www.youtube.com/@LeeLukinovich/featured" target="_blank"><img src="./img/youtube logo.png" alt="youtube logo" /></a>
+          <a href="https://www.tiktok.com/@abita.solutions" target="_blank"><img src="./img/tik-tok-logo.png" alt="tick tock logo"/></a>
           <a href="mailto:abitasolutions@gmail.com"><img src="./img/email logo.png" alt="email link" /></a>
         </div>
         <form id="contact-form" action="https://formsubmit.co/mw3111111@hotmail.com" method="POST" name="_template" value="table">
@@ -330,7 +334,7 @@
           </div>
           <div>
             <!-- <label for="email">Email</label> -->
-            <input type="text" id="email" name="email" placeholder="Email" />
+            <input type="email" id="email" name="email" placeholder="Email" />
           </div>
           <div>
             <!-- <label for="message">Message</label> -->
