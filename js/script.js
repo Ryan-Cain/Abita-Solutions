@@ -1,3 +1,5 @@
+// Mobile navbar toggle button
+
 const toggleButtons = document.getElementsByClassName("navbar-toggle-btn");
 const mainToggleButton = document.getElementById("nav-toggle");
 const navbarLinks = document.getElementById("tab-links");
@@ -16,26 +18,27 @@ function closeNavbar() {
   }
 }
 
+// Phone number movement on main splash screen
+
 const phoneNum = document.getElementById("services-phone");
 const phoneBackground = document.getElementById("white-back-phone");
 const colorOverlay = document.querySelector(".color-overlay");
-const serviceLinkContainer 
 
 window.onscroll = function () {
   checkScrollPosition();
   closeNavbar();
-  // console.log(window.scrollY);
-  // console.log(window.innerHeight * 0.15);
-  // console.log(window.innerHeight - window.scrollY);
+  // adds white background on mobile behind phone number when at top of screen
   if (window.innerHeight * 0.28 > window.innerHeight - window.scrollY) {
     phoneBackground.classList.add("active");
     phoneNum.classList.add("active");
-    // phoneNum.style.fontSize = "26px";
   } else {
     phoneBackground.classList.remove("active");
     phoneNum.classList.remove("active");
-    // phoneNum.style.backgroundColor = "white";
   }
+
+  // this makes the blue video overlay be 100% opacity to hide
+  // the video at the bottom of the page on mobile for when people
+  // scroll to quickly
   console.log(window.scrollY, document.body.scrollHeight / 2);
   if (window.scrollY > document.body.scrollHeight / 2) {
     colorOverlay.classList.add("active");
@@ -43,22 +46,18 @@ window.onscroll = function () {
     colorOverlay.classList.remove("active");
   }
 };
+
 function checkScrollPosition() {
   if (screen.width < 500) {
     return;
   } else {
     if (window.scrollY <= 500) {
       phoneNum.style.left = "55vw";
-      // phoneNum.classList.add("active1");
     } else if (window.scrollY >= 501 && window.scrollY <= 625) {
-      // phoneNum.classList.remove("active3");
-      // phoneNum.classList.add("active2");
       phoneNum.style.left = "25vw";
       phoneNum.style.fontSize = "56px";
       phoneNum.style.marginTop = "0px";
     } else if (window.scrollY >= 625) {
-      // phoneNum.classList.remove("active2");
-      // phoneNum.classList.add("active3");
       phoneNum.style.left = "25vw";
       phoneNum.style.fontSize = "36px";
       phoneNum.style.marginTop = "8px";
@@ -70,11 +69,7 @@ function checkScrollPosition() {
   }
 }
 
-// intersection observer
-
-const observerElements = document.querySelectorAll("#about-us");
-
-// Open pic modal
+// Functions for the picture modal, creates then removes the modal element
 function openPicModal() {
   if (screen.width < 500) {
     return;
@@ -103,22 +98,14 @@ function closePicModal() {
   body.classList.remove("stop-scroll");
 }
 
-// phone number
-// let formPhoneNum = document.querySelector("#phone");
-// formPhoneNum.addEventListener("input", phoneNumber);
+// here tried to lock screen to be portrait mode only for mobile but
+// it didnt work
 
-// function phoneNumber(elem) {
-//   let number = elem.target.value;
-//   console.log(number);
-//   console.log(elem);
-//   elem.target.value = number + "l";
-// }
-
-window.screen.orientation
-  .lock("portrait")
-  .then(() => {
-    console.log("good");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// window.screen.orientation
+//   .lock("portrait")
+//   .then(() => {
+//     console.log("good");
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
