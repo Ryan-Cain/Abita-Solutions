@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="./styles/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css" />
   <!-- <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 480px)" /> -->
   <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 600px)" />
-  <link rel="stylesheet" href="styles/styles-tablet.css"
-  media="screen and (min-width: 601px) and (max-width: 991px)" />
+  <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (min-width: 601px) and (max-width: 991px)" />
   <link rel="stylesheet" href="styles/styles.css" media="screen and (min-width: 992px)" />
   <title>Abita Solutions</title>
   <script src="https://kit.fontawesome.com/8074480181.js" crossorigin="anonymous"></script>
@@ -44,7 +43,7 @@
       </div>
     </div>
     <div class="nav-hide">
-      
+
       <nav id="tab-links">
         <ul>
           <li><a href="#home" class="navbar-toggle-btn">Home</a></li>
@@ -54,9 +53,10 @@
           <li>
             <a href="#about-us-link" class="navbar-toggle-btn">About Us</a>
           </li>
-          <li>
+          <!-- Client wanted to put testimonials section on hold -->
+          <!-- <li>
             <a href="#testimonial-link" class="navbar-toggle-btn">Testimonials</a>
-          </li>
+          </li> -->
           <li>
             <a href="#contact-link" class="navbar-toggle-btn">Contact</a>
           </li>
@@ -80,7 +80,7 @@
       <source src="./img/real-pics/mainscreen-vid.mp4" type="video/mp4" />
     </video>
   </div>
-  
+
   <div class="main-splash-screen">
     <div class="intro-contact">
       <div class="intro-slogan">
@@ -96,16 +96,15 @@
           needs.
         </p>
       </div>
-      
+
       <div class="right-side">
-        <div></div>
       </div>
     </div>
   </div>
 
   <!-- phone number -->
   <div id="service-link-container">
-    
+
     <a href="tel:+19852420022" id="services-phone">(985) 242-0022</a>
   </div>
   <div id="white-back-phone"></div>
@@ -117,88 +116,171 @@
         Services
         <div id="services-link"></div>
       </h2>
-      <div class="service-tiles">
-        <div class="tile">
-          <div class="img-or-desc">
-            <img src="./img/real-pics/sewer-backup-380x300.jpg.png" alt="sewer backup" />
-            <div class="overlay">
-              <p>
-                We can diagnose where the backup originated and properly
-                clear the system.
-              </p>
+      <!-- Fullscreen service tiles -->
+      <div class="mobile-hide">
+        <div class="service-tiles">
+          <div class="tile">
+            <div class="img-or-desc">
+              <img src="./img/real-pics/general-plumbing-380x300.JPG.png" alt="sewer backup" />
+              <div class="overlay">
+                <div>
+                  <p>
+                    Our services include new installations, maintenance, and
+                    repairs of all plumbing systems.
+                  </p>
+                </div>
+              </div>
             </div>
+            <h3>General Plumbing</h3>
           </div>
-          <h3>Sewer Backups</h3>
+          <div class="tile">
+            <div class="img-or-desc">
+              <img src="./img/real-pics/sewer-backup-380x300.jpg.png" alt="sewer backup" />
+              <div class="overlay">
+                <div>
+                  <p>
+                    We can diagnose where the backup originated and properly
+                    clear the system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3>Sewer Backups</h3>
+          </div>
+          <div class="tile">
+            <div class="img-or-desc">
+              <img src="./img/real-pics/camera-inspection-380x300.JPG.png" alt="sewer camera" />
+              <div class="overlay">
+                <div>
+                  <p>
+                    We can inspect and record video footage to determine
+                    backup and show proof once it's cleared.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3>Camera Inspection</h3>
+          </div>
+          <div class="tile">
+            <div class="img-or-desc">
+              <img src="./img/real-pics/backflow-testing-380x300.jpg.png" alt="sewer backup" />
+              <div class="overlay">
+                <div>
+                  <p>
+                    We are licensed to inspect and install backflow preventers
+                    in the state of Louisiana.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3>Backflow Testing</h3>
+          </div>
+          <div class="tile">
+            <div class="img-or-desc">
+              <img src="./img/real-pics/trenchless-operations.png" alt="sewer backup" />
+              <div class="overlay">
+                <div>
+                  <p>
+                    We can solve problems in underground pipelines without making trenches or tearing down walls.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3>Trenchless Repair</h3>
+          </div>
         </div>
-        <div class="tile">
-          <div class="img-or-desc">
-            <img src="./img/real-pics/camera-inspection-380x300.JPG.png" alt="sewer camera" />
-            <div class="overlay">
-              <p>
-                We can inspect and record video footage to determine
-                backup and show proof once it's cleared.
-              </p>
+      </div>
+
+
+
+
+      <!-- Mobile service tiles -->
+      <div class="fullscreen-hide">
+        <div class="service-tiles">
+          <div class="tile">
+            <h3>General Plumbing</h3>
+            <div class="img-or-desc">
+              <img src="./img/real-pics/general-plumbing-380x300.JPG.png" alt="sewer backup" />
             </div>
+            <p>
+              Our services include new installations, maintenance, and
+              repairs of all plumbing systems.
+            </p>
           </div>
-          <h3>Camera Inspection</h3>
-        </div>
-        <div class="tile">
-          <div class="img-or-desc">
-            <img src="./img/real-pics/backflow-testing-380x300.jpg.png" alt="sewer backup" />
-            <div class="overlay">
-              <p>
-                We are licensed to inspect and install backflow preventers
-                in the state of Louisiana.
-              </p>
+          <div class="tile">
+            <h3>Sewer Backups</h3>
+            <div class="img-or-desc">
+              <img src="./img/real-pics/sewer-backup-380x300.jpg.png" alt="sewer backup" />
             </div>
+            <p>
+              We can diagnose where the backup originated and properly
+              clear the system.
+            </p>
           </div>
-          <h3>Backflow Testing</h3>
-        </div>
-        <div class="tile">
-          <div class="img-or-desc">
-            <img src="./img/real-pics/general-plumbing-380x300.JPG.png" alt="sewer backup" />
-            <div class="overlay">
-              <p>
-                Our services include new installations, maintenance, and
-                repairs of all plumbing systems.
-              </p>
+          <div class="tile">
+            <h3>Camera Inspection</h3>
+            <div class="img-or-desc">
+              <img src="./img/real-pics/camera-inspection-380x300.JPG.png" alt="sewer backup" />
             </div>
+            <p>
+              We can inspect and record video footage to determine
+              backup and show proof once it's cleared.
+            </p>
           </div>
-          <h3>General Plumbing</h3>
+          <div class="tile">
+            <h3>Backflow Testing</h3>
+            <div class="img-or-desc">
+              <img src="./img/real-pics/backflow-testing-380x300.jpg.png" alt="sewer backup" />
+            </div>
+            <p>
+              We are licensed to inspect and install backflow preventers
+              in the state of Louisiana.
+            </p>
+          </div>
+          <div class="tile">
+            <h3>Trenchless Repair</h3>
+            <div class="img-or-desc">
+              <img src="./img/real-pics/trenchless-operations.png" alt="sewer backup" />
+            </div>
+            <p>
+              We can solve problems in underground pipelines without making trenches or tearing down walls.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ----------About Us---------- -->
-    <section class="about-us" id="about-us">
-      <h2>About Us
-        <div id="about-us-link"></div>
-      </h2>
-      <div class="pic-and-bio">
-        <img class="desktop-pic" src="./img/ThePlumbers.jpg" alt="" />
-        <div class="about-bio">
-          <img class="mobile-landscape-pic" src="./img/ThePlumbers.jpg" alt="" />
-          <h4>We are focused on solutions</h4>
-          <p>
-            We are a locally owned and operated business, proudly
-            providing solutions for your day to day commercial plumbing
-            needs. We strive for excellence while building lasting
-            relationships. If professional service in a timely manner
-            backed with integrity is what you're looking for, Abita
-            Solutions is your company of choice.
-          </p>
-       
-        </div>
-      </div>
-    </section>
-    <div></div>
+    <div class="fix-vid-blur-line"> <!-- There was a blur between the about us and service location, this div background color removes that-->
+      <!-- ----------About Us---------- -->
+      <section class="about-us" id="about-us">
+        <h2>About Us
+          <div id="about-us-link"></div>
+        </h2>
+        <div class="pic-and-bio">
+          <!-- <img class="desktop-pic" src="./img/ThePlumbers.jpg" alt="" /> -->
+          <div class="about-bio">
+            <!-- <img class="mobile-landscape-pic" src="./img/ThePlumbers.jpg" alt="" /> -->
+            <h4>We are focused on solutions</h4>
+            <p>
+              We are a locally owned and operated business, proudly
+              providing solutions for your day to day commercial plumbing
+              needs. We strive for excellence while building lasting
+              relationships. If professional service in a timely manner
+              backed with integrity is what you're looking for, Abita
+              Solutions is your company of choice.
+            </p>
 
-    <!-- ----------Testimonials---------- -->
-    <section class="testimonials" id="testimonials-container">
-      <h2 id="testimonial-header">Testimonials
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------Testimonials---------- -->
+      <!-- Customer wanted to put testimonials section on hold -->
+      <section class="testimonials" id="testimonials-container">
+        <!-- <h2 id="testimonial-header">Testimonials -->
         <div id="testimonial-link"></div>
-      </h2>
-      <div id="testimonial" class="mySwiper">
+        <!-- </h2> -->
+        <!-- <div id="testimonial" class="mySwiper">
         <div id="testimonial-content" class="swiper-wrapper">
           <div class="slide swiper-slide">
             <p>
@@ -243,51 +325,52 @@
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
+        <div class="swiper-pagination"></div> -->
+    
 
-      <!-- ----------Customer Name Scroller---------- -->
-      <span>
-        <h3>Business locations we have serviced</h3>
-      </span>
-      <div id="customer-scroll-wrapper">
-        <div id="customer-scroll-name">
-          
-          <p>
-            <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
-            <span><img src="./img/logos/walgreens.png" alt=""></span>
-            <span><img src="./img/logos/amazon.png" alt=""></span>
-            <span><img src="./img/logos/tj maxx.png" alt=""></span>
-            <span><img src="./img/logos/dollar general.png" alt=""></span>
-            <span><img src="./img/logos/tractor supply.png" alt=""></span>
-            <span><img src="./img/logos/pjs coffee.png" alt=""></span>
-            <span><img src="./img/logos/dollar tree.png" alt=""></span>
-            <span><img src="./img/logos/family dollar.png" alt=""></span>
-            <span><img src="./img/logos/ulta beauty.png" alt=""></span>
-            <span><img src="./img/logos/chipotle.png" alt=""></span>
-            <span><img src="./img/logos/coach.png" alt=""></span>
-          </p>
-          <p>
-            <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
-            <span><img src="./img/logos/walgreens.png" alt=""></span>
-            <span><img src="./img/logos/amazon.png" alt=""></span>
-            <span><img src="./img/logos/tj maxx.png" alt=""></span>
-            <span><img src="./img/logos/dollar general.png" alt=""></span>
-            <span><img src="./img/logos/tractor supply.png" alt=""></span>
-            <span><img src="./img/logos/pjs coffee.png" alt=""></span>
-            <span><img src="./img/logos/dollar tree.png" alt=""></span>
-            <span><img src="./img/logos/family dollar.png" alt=""></span>
-            <span><img src="./img/logos/ulta beauty.png" alt=""></span>
-            <span><img src="./img/logos/chipotle.png" alt=""></span>
-            <span><img src="./img/logos/coach.png" alt=""></span>
-          </p>
-          
-          
-         
 
-        </div>
+    <!-- ----------Customer Name Scroller---------- -->
+    <span>
+      <h3>Business locations we have serviced</h3>
+    </span>
+    <div id="customer-scroll-wrapper">
+      <div id="customer-scroll-name">
+
+        <p>
+          <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
+          <span><img src="./img/logos/walgreens.png" alt=""></span>
+          <span><img src="./img/logos/amazon.png" alt=""></span>
+          <span><img src="./img/logos/tj maxx.png" alt=""></span>
+          <span><img src="./img/logos/dollar general.png" alt=""></span>
+          <span><img src="./img/logos/tractor supply.png" alt=""></span>
+          <span><img src="./img/logos/pjs coffee.png" alt=""></span>
+          <span><img src="./img/logos/dollar tree.png" alt=""></span>
+          <span><img src="./img/logos/family dollar.png" alt=""></span>
+          <span><img src="./img/logos/ulta beauty.png" alt=""></span>
+          <span><img src="./img/logos/chipotle.png" alt=""></span>
+          <span><img src="./img/logos/coach.png" alt=""></span>
+        </p>
+        <p>
+          <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
+          <span><img src="./img/logos/walgreens.png" alt=""></span>
+          <span><img src="./img/logos/amazon.png" alt=""></span>
+          <span><img src="./img/logos/tj maxx.png" alt=""></span>
+          <span><img src="./img/logos/dollar general.png" alt=""></span>
+          <span><img src="./img/logos/tractor supply.png" alt=""></span>
+          <span><img src="./img/logos/pjs coffee.png" alt=""></span>
+          <span><img src="./img/logos/dollar tree.png" alt=""></span>
+          <span><img src="./img/logos/family dollar.png" alt=""></span>
+          <span><img src="./img/logos/ulta beauty.png" alt=""></span>
+          <span><img src="./img/logos/chipotle.png" alt=""></span>
+          <span><img src="./img/logos/coach.png" alt=""></span>
+        </p>
+
+
       </div>
+    </div>
     </section>
+  </div>
+    </div>
   </main>
 
   <!-- ----------Certifications---------- -->
@@ -297,11 +380,13 @@
         <h3>Certifications</h3>
         <p><span>License #</span> 6635</p>
         <p id="bfp-cert">(BFP Certified)</p>
-        <a href="https://www.bbb.org/us/la/abita-springs/profile/commercial-plumber/abita-solutions-llc-0985-90041261/#sealclick" target="_blank" rel="nofollow"><img id="bbb-tile" src="./img/BBB.png" alt="Abita Solutions LLC BBB Business Review" /></a>
+        <a href="https://www.bbb.org/us/la/abita-springs/profile/commercial-plumber/abita-solutions-llc-0985-90041261/#sealclick"
+          target="_blank" rel="nofollow"><img id="bbb-tile" src="./img/BBB.png"
+            alt="Abita Solutions LLC BBB Business Review" /></a>
         <img id="spbla-pic" src="./img/real-pics/SPBLA-logo.png" alt="" class="no-pointer" />
         <img onclick="openPicModal()" src="./img/real-pics/bfp-certificate.jpg" alt="" />
       </div>
-      
+
       <!-- ----------Contact / Form---------- -->
       <div class="footer-tile" id="form-wrapper">
         <h3>Contact Us
@@ -316,12 +401,14 @@
           <span>Phone:</span>
           <a href="tel:+19852420022">(985) 242-0022</a>
         </p>
-        <div id="social-media-icons">
+        <!-- Comment out social media sites until client makes them more customer facing -->
+        <!-- <div id="social-media-icons">
           <a href="https://www.youtube.com/@LeeLukinovich/featured" target="_blank"><img src="./img/youtube logo.png" alt="youtube logo" /></a>
           <a href="https://www.tiktok.com/@abita.solutions" target="_blank"><img src="./img/tik-tok-logo.png" alt="tick tock logo"/></a>
           <a href="mailto:abitasolutions@gmail.com"><img src="./img/email logo.png" alt="email link" /></a>
-        </div>
-        <form id="contact-form" action="https://formsubmit.co/mw3111111@hotmail.com" method="POST" name="_template" value="table">
+        </div> -->
+        <form id="contact-form" action="https://formsubmit.co/mw3111111@hotmail.com" method="POST" name="_template"
+          value="table">
           <p>Or send us a message here, although if the request is urgent please give us a call!</p>
           <div>
             <!-- <label for="name">Name</label> -->
@@ -337,14 +424,15 @@
           </div>
           <div>
             <!-- <label for="message">Message</label> -->
-            <textarea id="message" name="message" placeholder="How can we provide you with excellent service?"></textarea>
+            <textarea id="message" name="message"
+              placeholder="How can we provide you with excellent service?"></textarea>
           </div>
 
           <button id="submit-btn" type="submit" value="Submit">
             Submit
           </button>
           <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="#home">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5501">
         </form>
       </div>
 
@@ -355,7 +443,7 @@
           We proudly service the Northshore and Southshore of Southeast
           Louisiana.
         </p>
-        <img src="./img/real-pics/service-area-map.jpeg" alt="service-area-map" />
+        <img src="./img/real-pics/service-area-map.png" alt="service-area-map" />
         <div class="overlay">
           <!-- <div id="contact-link"></div> -->
         </div>
@@ -364,9 +452,9 @@
   </footer>
 
 
-  
-  
-</div>
+
+
+  </div>
 
 
 
