@@ -73,10 +73,12 @@
   <div class="main-overlay">
     <div class="color-overlay"></div>
 
-    <video class="background-clip mobile-hide" onloadstart="this.playbackRate = .5" autoplay loop muted playsinline>
+    <video class="background-clip-full mobile-hide" onloadstart="this.playbackRate = .5" autoplay loop muted
+      playsinline>
       <source src="./img/real-pics/mainscreen-vid.mp4" type="video/mp4" />
     </video>
-    <video class="background-clip fullscreen-hide" onloadstart="this.playbackRate = .5" autoplay loop muted playsinline>
+    <video class="background-clip-mobile fullscreen-hide" onloadstart="this.playbackRate = .5" autoplay loop muted
+      playsinline>
       <source src="./img/real-pics/mainscreen-vid.mp4" type="video/mp4" />
     </video>
   </div>
@@ -250,7 +252,8 @@
       </div>
     </section>
 
-    <div class="fix-vid-blur-line"> <!-- There was a blur between the about us and service location, this div background color removes that-->
+    <div class="fix-vid-blur-line">
+      <!-- There was a blur between the about us and service location, this div background color removes that-->
       <!-- ----------About Us---------- -->
       <section class="about-us" id="about-us">
         <h2>About Us
@@ -326,50 +329,50 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div> -->
-    
 
 
-    <!-- ----------Customer Name Scroller---------- -->
-    <span>
-      <h3>Business locations we have serviced</h3>
-    </span>
-    <div id="customer-scroll-wrapper">
-      <div id="customer-scroll-name">
 
-        <p>
-          <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
-          <span><img src="./img/logos/walgreens.png" alt=""></span>
-          <span><img src="./img/logos/amazon.png" alt=""></span>
-          <span><img src="./img/logos/tj maxx.png" alt=""></span>
-          <span><img src="./img/logos/dollar general.png" alt=""></span>
-          <span><img src="./img/logos/tractor supply.png" alt=""></span>
-          <span><img src="./img/logos/pjs coffee.png" alt=""></span>
-          <span><img src="./img/logos/dollar tree.png" alt=""></span>
-          <span><img src="./img/logos/family dollar.png" alt=""></span>
-          <span><img src="./img/logos/ulta beauty.png" alt=""></span>
-          <span><img src="./img/logos/chipotle.png" alt=""></span>
-          <span><img src="./img/logos/coach.png" alt=""></span>
-        </p>
-        <p>
-          <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
-          <span><img src="./img/logos/walgreens.png" alt=""></span>
-          <span><img src="./img/logos/amazon.png" alt=""></span>
-          <span><img src="./img/logos/tj maxx.png" alt=""></span>
-          <span><img src="./img/logos/dollar general.png" alt=""></span>
-          <span><img src="./img/logos/tractor supply.png" alt=""></span>
-          <span><img src="./img/logos/pjs coffee.png" alt=""></span>
-          <span><img src="./img/logos/dollar tree.png" alt=""></span>
-          <span><img src="./img/logos/family dollar.png" alt=""></span>
-          <span><img src="./img/logos/ulta beauty.png" alt=""></span>
-          <span><img src="./img/logos/chipotle.png" alt=""></span>
-          <span><img src="./img/logos/coach.png" alt=""></span>
-        </p>
+        <!-- ----------Customer Name Scroller---------- -->
+        <span>
+          <h3>Business locations we have serviced</h3>
+        </span>
+        <div id="customer-scroll-wrapper">
+          <div id="customer-scroll-name">
+
+            <p>
+              <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
+              <span><img src="./img/logos/walgreens.png" alt=""></span>
+              <span><img src="./img/logos/amazon.png" alt=""></span>
+              <span><img src="./img/logos/tj maxx.png" alt=""></span>
+              <span><img src="./img/logos/dollar general.png" alt=""></span>
+              <span><img src="./img/logos/tractor supply.png" alt=""></span>
+              <span><img src="./img/logos/pjs coffee.png" alt=""></span>
+              <span><img src="./img/logos/dollar tree.png" alt=""></span>
+              <span><img src="./img/logos/family dollar.png" alt=""></span>
+              <span><img src="./img/logos/ulta beauty.png" alt=""></span>
+              <span><img src="./img/logos/chipotle.png" alt=""></span>
+              <span><img src="./img/logos/coach.png" alt=""></span>
+            </p>
+            <p>
+              <span><img src="./img/logos/sams-club-logo.png" alt=""></span>
+              <span><img src="./img/logos/walgreens.png" alt=""></span>
+              <span><img src="./img/logos/amazon.png" alt=""></span>
+              <span><img src="./img/logos/tj maxx.png" alt=""></span>
+              <span><img src="./img/logos/dollar general.png" alt=""></span>
+              <span><img src="./img/logos/tractor supply.png" alt=""></span>
+              <span><img src="./img/logos/pjs coffee.png" alt=""></span>
+              <span><img src="./img/logos/dollar tree.png" alt=""></span>
+              <span><img src="./img/logos/family dollar.png" alt=""></span>
+              <span><img src="./img/logos/ulta beauty.png" alt=""></span>
+              <span><img src="./img/logos/chipotle.png" alt=""></span>
+              <span><img src="./img/logos/coach.png" alt=""></span>
+            </p>
 
 
-      </div>
+          </div>
+        </div>
+      </section>
     </div>
-    </section>
-  </div>
     </div>
   </main>
 
@@ -384,7 +387,7 @@
           target="_blank" rel="nofollow"><img id="bbb-tile" src="./img/BBB.png"
             alt="Abita Solutions LLC BBB Business Review" /></a>
         <img id="spbla-pic" src="./img/real-pics/SPBLA-logo.png" alt="" class="no-pointer" />
-        <img onclick="openPicModal()" src="./img/real-pics/bfp-certificate.jpg" alt="" />
+        <img src="./img/bfp-prevention-logo.png" alt="" />
       </div>
 
       <!-- ----------Contact / Form---------- -->

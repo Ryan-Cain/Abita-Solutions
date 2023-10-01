@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+html.active {
+  background-color: rgb(57, 110, 164);
+}
 
 /* ---------- Header ---------- */
 header {
@@ -275,7 +278,7 @@ body {
   height: 100vh;
 }
 
-.main-overlay .background-clip {
+.main-overlay .background-clip-mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -296,10 +299,8 @@ body {
   position: relative;
   background-color: rgb(29, 55, 92);
 }
-.color-overlay.active {
-  /* background-color: rgba(30, 89, 160); */
-  /* opacity: 100; */
-  z-index: 50;
+.background-clip-mobile.active {
+  visibility: hidden;
 }
 .intro-contact {
   display: flex;
@@ -724,6 +725,10 @@ margin: 10px 5px;
 
 #form-wrapper > * {
   padding: 8px 0;
+}
+
+#form-wrapper a {
+  color: white;
 }
 
 #form-wrapper #social-media-icons img {

@@ -1,5 +1,4 @@
 // Mobile navbar toggle button
-
 const toggleButtons = document.getElementsByClassName("navbar-toggle-btn");
 const mainToggleButton = document.getElementById("nav-toggle");
 const navbarLinks = document.getElementById("tab-links");
@@ -18,11 +17,10 @@ function closeNavbar() {
 	}
 }
 
-// Phone number movement on main splash screen
-
-const phoneNum = document.getElementById("services-phone");
-const phoneBackground = document.getElementById("white-back-phone");
-const colorOverlay = document.querySelector(".color-overlay");
+// Background video
+const backgroundVidMobile = document.querySelector(".background-clip-mobile");
+const backgroundVidFull = document.querySelector(".background-clip-full");
+const htmlElem = document.querySelector("html");
 
 window.onscroll = function () {
 	checkScrollPosition();
@@ -35,17 +33,24 @@ window.onscroll = function () {
 		phoneBackground.classList.remove("active");
 		phoneNum.classList.remove("active");
 	}
-
 	// this makes the blue video overlay be 100% opacity to hide
 	// the video at the bottom of the page on mobile for when people
-	// scroll to quickly
+	// scroll too quickly
 	console.log(window.scrollY, document.body.scrollHeight / 2);
 	if (window.scrollY > document.body.scrollHeight / 2) {
-		colorOverlay.classList.add("active");
+		backgroundVidMobile.classList.add("active");
+		backgroundVidFull.classList.add("active");
+		htmlElem.classList.add("active");
 	} else {
-		colorOverlay.classList.remove("active");
+		backgroundVidMobile.classList.remove("active");
+		backgroundVidFull.classList.remove("active");
+		htmlElem.classList.remove("active");
 	}
 };
+
+// Phone number movement
+const phoneNum = document.getElementById("services-phone");
+const phoneBackground = document.getElementById("white-back-phone");
 
 function checkScrollPosition() {
 	if (screen.width < 500) {
@@ -68,44 +73,3 @@ function checkScrollPosition() {
 		}
 	}
 }
-
-// Functions for the picture modal, creates then removes the modal element
-function openPicModal() {
-	if (screen.width < 500) {
-		return;
-	} else {
-		const body = document.querySelector("body");
-		body.classList.add("stop-scroll");
-
-		const modalInsert = document.querySelector("#insert-box");
-		modalInsert.innerHTML = `
-  <div id="image-modal-container" >
-  
-  <div id="image-modal">
-  <p onclick="closePicModal()">X</p>
-        <img src="./img/real-pics/bfp-certificate.jpg" alt="" />
-        </div>
-      
-        </div>
-        `;
-	}
-}
-
-function closePicModal() {
-	const modalInsert = document.querySelector("#insert-box");
-	modalInsert.innerHTML = ``;
-	const body = document.querySelector("body");
-	body.classList.remove("stop-scroll");
-}
-
-// here tried to lock screen to be portrait mode only for mobile but
-// it didnt work
-
-// window.screen.orientation
-//   .lock("portrait")
-//   .then(() => {
-//     console.log("good");
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
