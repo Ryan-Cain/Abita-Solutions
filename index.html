@@ -4,25 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css" />
-  <!-- <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 480px)" /> -->
   <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-width: 600px)" />
   <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (min-width: 601px) and (max-width: 991px)" />
   <link rel="stylesheet" href="styles/styles.css" media="screen and (min-width: 992px)" />
   <title>Abita Solutions</title>
-  <script src="https://kit.fontawesome.com/8074480181.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body id="home">
-
-
-  <!-- Image Modal -->
-  <div id="insert-box"></div>
-
-
-
-
   <!-- ---------- Navbar------------ -->
   <header>
     <div class="header-left">
@@ -54,7 +43,7 @@
             <a href="#about-us-link" class="navbar-toggle-btn">About Us</a>
           </li>
           <!-- Client wanted to put testimonials section on hold -->
-          <!-- <li>
+          <!-- <li>  
             <a href="#testimonial-link" class="navbar-toggle-btn">Testimonials</a>
           </li> -->
           <li>
@@ -260,9 +249,10 @@
           <div id="about-us-link"></div>
         </h2>
         <div class="pic-and-bio">
-          <!-- <img class="desktop-pic" src="./img/ThePlumbers.jpg" alt="" /> -->
+          <!-- waiting on picture of employees to go here -->
+          <!-- <img class="desktop-pic" src="" alt="" /> -->
           <div class="about-bio">
-            <!-- <img class="mobile-landscape-pic" src="./img/ThePlumbers.jpg" alt="" /> -->
+            <!-- <img class="mobile-landscape-pic" src="" alt="" /> -->
             <h4>We are focused on solutions</h4>
             <p>
               We are a locally owned and operated business, proudly
@@ -278,59 +268,11 @@
       </section>
 
       <!-- ----------Testimonials---------- -->
-      <!-- Customer wanted to put testimonials section on hold -->
+      <!-- Client wanted to put testimonials section on hold -->
       <section class="testimonials" id="testimonials-container">
         <!-- <h2 id="testimonial-header">Testimonials -->
         <div id="testimonial-link"></div>
-        <!-- </h2> -->
-        <!-- <div id="testimonial" class="mySwiper">
-        <div id="testimonial-content" class="swiper-wrapper">
-          <div class="slide swiper-slide">
-            <p>
-              Abita solutions were very helpful and solved the problem
-              quickly and proffesionally, will definitly call again next
-              time!
-            </p>
-            <div class="details">
-              <span class="name">Donald Trump</span>
-              <span class="job-title">USA, President</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <p>
-              Abita solutions got to the site quickly and fixed the clog!!
-            </p>
-            <div class="details">
-              <span class="name">Tony Stark</span>
-              <span class="job-title">Avengers HQ, Team Lead</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <p>
-              I have never seen anyone wrestle the annaconda like that guy
-              Ryan did, he is a Legend!!
-            </p>
-            <div class="details">
-              <span class="name">No one</span>
-              <span class="job-title">No where, Ever</span>
-            </div>
-          </div>
-          <div class="slide swiper-slide">
-            <p>
-              Wow!! Wow! Wow!! Just stop thinking about it and call Abita
-              Solutions now!
-            </p>
-            <div class="details">
-              <span class="name">Lee Lukinovich</span>
-              <span class="job-title">Abita Solutions, El Jefe</span>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div> -->
-
-
+        <!-- When client is ready, add back Swiper JS back in and copy over layout from previous version -->
 
         <!-- ----------Customer Name Scroller---------- -->
         <span>
@@ -367,8 +309,6 @@
               <span><img src="./img/logos/chipotle.png" alt=""></span>
               <span><img src="./img/logos/coach.png" alt=""></span>
             </p>
-
-
           </div>
         </div>
       </section>
@@ -404,7 +344,7 @@
           <span>Phone:</span>
           <a href="tel:+19852420022">(985) 242-0022</a>
         </p>
-        <!-- Comment out social media sites until client makes them more customer facing -->
+        <!-- Comment out social media sites until client has them ready -->
         <!-- <div id="social-media-icons">
           <a href="https://www.youtube.com/@LeeLukinovich/featured" target="_blank"><img src="./img/youtube logo.png" alt="youtube logo" /></a>
           <a href="https://www.tiktok.com/@abita.solutions" target="_blank"><img src="./img/tik-tok-logo.png" alt="tick tock logo"/></a>
@@ -414,19 +354,19 @@
           value="table">
           <p>Or send us a message here, although if the request is urgent please give us a call!</p>
           <div>
-            <!-- <label for="name">Name</label> -->
+            <label class="screen-reader-only" for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" />
           </div>
           <div>
-            <!-- <label for="number">Number</label> -->
+            <label class="screen-reader-only" for="number">Number</label>
             <input oninput="phoneNumber(this)" type="tel" id="phone" name="phone" placeholder="Phone Number" />
           </div>
           <div>
-            <!-- <label for="email">Email</label> -->
+            <label class="screen-reader-only" for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" />
           </div>
           <div>
-            <!-- <label for="message">Message</label> -->
+            <label class="screen-reader-only" for="message">Message</label>
             <textarea id="message" name="message"
               placeholder="How can we provide you with excellent service?"></textarea>
           </div>
@@ -447,44 +387,12 @@
           Louisiana.
         </p>
         <img src="./img/real-pics/service-area-map.png" alt="service-area-map" />
-        <div class="overlay">
-          <!-- <div id="contact-link"></div> -->
-        </div>
       </div>
     </section>
   </footer>
-
-
-
-
   </div>
 
-
-
-
-
-
-  <script src="./js/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
-  <!-- ----------Script for testimonial swiper---------- -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      autoplay: {
-        delay: 8000,
-      },
-      slidesPerView: 1,
-      grabCursor: true,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
 </body>
 
 </html>
